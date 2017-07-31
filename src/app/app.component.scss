@@ -1,0 +1,148 @@
+[menu] {
+    background-color: #000;
+    height: 50px;
+
+    [menu-center] {
+        position: relative;
+
+        &.bg {
+            width: 200px;
+            height: 200px;
+            background: url(../assets/logo.png);
+            background-size: 435px;
+            background-repeat: no-repeat;
+            background-position: -117px -124px;
+        }
+
+        img {
+            width: 200px;
+            position: absolute;
+            top: 0;
+            right: -100px;
+        }
+    }
+}
+
+[site-menu] {
+    background-color: #fff;
+
+    ul {
+        margin: 0;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+
+        li {
+            flex: 1;
+            width: 140px;
+            padding: 15px;
+            text-transform: uppercase;
+
+            &.active {
+                background-color: #eaebec;
+            }
+
+            &.logo {
+                flex: none;
+                width: 200px;
+            }
+        }
+    }
+}
+
+[hero] {
+    height: 500px;
+    background: url(../assets/slide_5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+
+    label {
+        margin: 50px;
+        padding: 10px 40px;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #000;
+        font-size: 20px;
+        letter-spacing: 4px;
+
+        i {
+            margin: 0 0 0 20px;
+        }
+    }
+}
+
+[content] {
+    [body] {
+        width: 1230px;
+
+        [block] {
+            margin: 20px;
+
+            img {
+                width: 300px;
+                height: 400px;
+            }
+
+            label {
+                padding: 10px;
+                background-color: #000;
+                font-size: 20px;
+                text-align: center;
+                color: #eee;
+                text-transform: uppercase;
+                font-weight: 200;
+
+                span {
+                    letter-spacing: -1px;
+                    font-weight: 700;
+                }
+
+                &.btn {
+                    font-size: 16px;
+                }
+
+                i {
+                    margin: 0 0 0 20px;
+                }
+            }
+
+            h3 {
+                font-weight: 300;
+                text-align: right;
+
+                span {
+                    display: block;
+                    font-size: 18px;
+                    line-height: 4px;
+                    font-weight: 700;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 300;
+
+                &.hide {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    [social] {
+        h4 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        i {
+            text-align: center;
+            font-size: 30px;
+            margin: 10px;
+            color: rgba(0, 0, 0, 0.46);
+        }        
+    }
+}
