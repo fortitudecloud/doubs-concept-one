@@ -1,10 +1,11 @@
+# Serving static site 
 FROM hypriot/rpi-node
 
-RUN npm install -g @angular/cli
+RUN npm install -g static-server
 
 WORKDIR /web
 
-COPY . /web
-RUN npm install
+COPY ./dist /web
+# RUN npm install
 
-CMD [ "ng", "serve" ]
+CMD [ "static-server", "-p", "3000" ]
